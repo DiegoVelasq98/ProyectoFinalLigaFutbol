@@ -24,6 +24,7 @@ public class Equipo {
 
     public Equipo(){}
 
+    //Constructor declarando las variables, aplicando POO
     public Equipo(int cod_equipo,String nom_equipo, String nom_estadio, String aforo, String fundacion, String ciudad) {
        this.cod_equipo = cod_equipo;
         this.nom_equipo = nom_equipo;
@@ -84,7 +85,7 @@ public class Equipo {
 
     
     
-    
+    //Metodo que permite leer los datos de la tabla por medio de un TableModel
     public DefaultTableModel leer() {
 
         DefaultTableModel tabla = new DefaultTableModel();
@@ -117,7 +118,7 @@ public class Equipo {
 
     }
    
-    
+    //Metodo de agregar, lo cual permite insertar datos a la tabla por medio de la query de Insert
     public int agregar() {
 
      int retorno = 0;
@@ -146,7 +147,8 @@ public class Equipo {
 
 
     
-    
+        //Metodo de modificar, lo cual permite insertar datos a la tabla por medio de la query de UPDATE
+
     public int modificar() {
 
         int retorno = 0;
@@ -175,6 +177,7 @@ public class Equipo {
 
     }
     
+        //Metodo de eliminar, lo cual permite insertar datos a la tabla por medio de la query de DELETE
 
     public int eliminar() {
        
