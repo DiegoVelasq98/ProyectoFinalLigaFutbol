@@ -42,9 +42,12 @@ public class sr_equipos extends HttpServlet {
             out.println("<body>");
          
             
-            
+            //Metodo que solicita en orden el constructor para agregar
              equipo = new Equipo(Integer.valueOf(request.getParameter("txt_codigo_equipo")),request.getParameter("txt_nombre_equipo"),request.getParameter("txt_nombre_estadio"),request.getParameter("txt_aforo"),request.getParameter("txt_fundacion"),request.getParameter("txt_ciudad_equipo"));
 
+
+
+                        //agregar por medio de boton
 
               if ("agregar".equals(request.getParameter("btn_agregar"))){
               if (equipo.agregar()>0) {
