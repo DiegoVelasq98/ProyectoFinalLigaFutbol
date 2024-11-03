@@ -14,7 +14,7 @@ public class conexion {
     
     //jdbc:mysql://localhost:3306/?user=root
     
-    
+    //Datos de la conexion a Workbench
     private final String puerto ="3306";
     private final String bd= "ligadefutbolproyecto";
    
@@ -28,7 +28,8 @@ public class conexion {
     private final String jdbc= "com.mysql.cj.jdbc.Driver";
     
     
-    
+        //Metodo para abrir conexion a la BD
+
    public void abrir_conexion(){
             try{
                 Class.forName(jdbc);
@@ -45,7 +46,8 @@ public class conexion {
 }
    
    
-   
+           //Metodo para cerrar conexion a la BD al momento de salir y terminar el programa
+
    public void cerrar_conexion(){
        
        try{
