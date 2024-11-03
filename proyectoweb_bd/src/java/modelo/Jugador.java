@@ -24,6 +24,8 @@ public class Jugador {
     
     public Jugador(){}
 
+        //Constructor declarando las variables, aplicando POO
+
     public Jugador(int cod_jugador, int equipo, int posicion, String nombre1, String nombre2, String nombre3, String apellido1, String apellido2, String correo, String ciudad, String fechana) {
         this.cod_jugador = cod_jugador;
         this.equipo = equipo;
@@ -129,6 +131,7 @@ public class Jugador {
 
 
 
+    //Hashmap que nos va a permitir poder seleccionar alguna posicion por medio de un drop
     public LinkedHashMap<String, String> drop_posicion() {
         LinkedHashMap<String, String> droposicion = new LinkedHashMap<>();
         try {
@@ -146,6 +149,9 @@ public class Jugador {
         }
         return droposicion;
     }
+
+
+        //Hashmap que nos va a permitir poder seleccionar algun equipo por medio de un drop
 
     public LinkedHashMap<String, String> drop_equipo() {
         LinkedHashMap<String, String> dropequipo = new LinkedHashMap<>();
@@ -170,8 +176,7 @@ public class Jugador {
     
     
     
-    
-    
+        //Metodo que permite leer los datos de la tabla por medio de un TableModel
     
     public DefaultTableModel leer() {
 
@@ -216,7 +221,8 @@ while (consulta.next()) {
     
     
     
-    
+        //Metodo de agregar, lo cual permite insertar datos a la tabla por medio de la query de Insert
+
     public int agregar() {
 
      int retorno = 0;
@@ -248,7 +254,10 @@ while (consulta.next()) {
         }
          return retorno;
     }
-         
+
+
+            //Metodo de modificar, lo cual permite insertar datos a la tabla por medio de la query de UPDATE
+
          public int modificar() {
 
      int retorno = 0;
@@ -288,7 +297,8 @@ while (consulta.next()) {
     
 
          
-         
+                 //Metodo de eliminar, lo cual permite insertar datos a la tabla por medio de la query de DELETE
+
          public int eliminar() {
 
      int retorno = 0;
