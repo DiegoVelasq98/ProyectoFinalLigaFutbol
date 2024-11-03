@@ -24,6 +24,8 @@ public class Presidente {
     
     public Presidente(){}
 
+        //Constructor declarando las variables, aplicando POO
+
     public Presidente(int cod, int equipopresi, String dpi, String nombre1, String nombre2, String nombre3, String apellido1, String apellido2, String fechana, String correo, String ciudad, String eleccion) {
         this.cod = cod;
         this.equipopresi = equipopresi;
@@ -138,7 +140,8 @@ public class Presidente {
     
     
     
-    
+        //Hashmap que nos va a permitir poder seleccionar algun equipó para Presidente por medio de un drop
+
     public LinkedHashMap<String, String> drop_presi() {
         LinkedHashMap<String, String> droposicion = new LinkedHashMap<>();
         try {
@@ -160,7 +163,8 @@ public class Presidente {
     
     
     
-    
+        //Metodo que permite leer los datos de la tabla por medio de un TableModel
+
     public DefaultTableModel leer() {
     DefaultTableModel tabla = new DefaultTableModel();
 
@@ -225,7 +229,8 @@ public class Presidente {
 
     
     
-    
+        //Metodo de agregar, lo cual permite insertar datos a la tabla por medio de la query de Insert
+
     public int agregar() {
     int retorno = 0;
     
@@ -265,6 +270,7 @@ public class Presidente {
     
    
     
+        //Metodo de modificar, lo cual permite insertar datos a la tabla por medio de la query de UPDATE
 
 public int modificar() {
     int retorno = 0;
@@ -304,7 +310,8 @@ public int modificar() {
 
 
 
-   
+           //Metodo de eliminar, lo cual permite insertar datos a la tabla por medio de la query de DELETE
+
    public int eliminar() {
     int retorno = 0;
     try {
